@@ -1,0 +1,75 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+	--titulo: 'Anton', sans-serif;
+}
+body {
+	background: #e2e5de;
+}
+main {
+	background: url('img/wallpaper-blur.jpg') no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 65vh;
+}
+h1 {
+	text-align: center;
+	font-family: var(--titulo);
+	font-size: 3em;
+	text-transform: uppercase;
+	font-weight: bolder;
+	padding-top: 100px;
+	padding-bottom: 40px;
+	color: #12100e;
+	text-shadow: 3px 2px 11px rgb(0 0 0 / 54%);
+}
+input {
+	display: block;
+	margin: auto;
+	width: 100px;
+	height: 20px;
+	padding: 0px 10px;
+	border: #12100e solid 2px;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.541);
+	transition: 0.3s;
+	border-radius: 10px;
+}
+input:focus {
+	width: 250px;
+	transition: 0.3s;
+}
+.conversor {
+	display: flex;
+	justify-content: center;
+}
+button {
+	margin-left: 10px;
+	width: 150px;
+	padding: 5px;
+	margin-top: 5px;
+	margin-bottom: 30px;
+	background: #12100e;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.384);
+}
+
+button:hover {
+	cursor: pointer;
+}
+div#valorConvertido {
+	background: #0b6e4f;
+	width: 250px;
+	margin: auto;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+	color: #12100e;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.384);
+}
