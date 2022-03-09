@@ -6,7 +6,7 @@ function ValorDolar(){
     let valorEmDolar = valorEmReal / 5;
     console.log(valorEmDolar)
     let elementoValorConvertido = document.getElementById("valorConvertido")
-    let valorConvertido = "O valor em Dólar é US$ " + valorEmDolar;
+    let valorConvertido = "O valor em Dólar é US" + valorEmDolar.toLocaleString('en-US', {style:'currency', currency:'USD'});
     elementoValorConvertido.innerHTML = valorConvertido;
 }
 function ValorEuro(){
@@ -17,6 +17,6 @@ function ValorEuro(){
     let valorEmEuro = valorEmReal / 5.54;
     console.log(valorEmEuro);
     let elementoValorConvertido = document.getElementById("valorConvertido")
-    let valorConvertido = "O valor em Euro é EUR€ " + valorEmEuro;
+    let valorConvertido = "O valor em Euro é EUR" + valorEmEuro.toLocaleString('fr-FR', {style: 'currency', currency:'EUR'});
     elementoValorConvertido.innerHTML = valorConvertido
 }
