@@ -1,3 +1,4 @@
+document.querySelector('#valorConvertido').style.display= "none";
 function ValorDolar(){
     let valorElemento = document.getElementById("valor");
     let valor = valorElemento.value;
@@ -7,6 +8,7 @@ function ValorDolar(){
     console.log(valorEmDolar)
     let elementoValorConvertido = document.getElementById("valorConvertido")
     let valorConvertido = "O valor em Dólar é US" + valorEmDolar.toLocaleString('en-US', {style:'currency', currency:'USD'});
+    document.querySelector('#valorConvertido').style.display= "block";
     elementoValorConvertido.innerHTML = valorConvertido;
 }
 function ValorEuro(){
@@ -18,5 +20,6 @@ function ValorEuro(){
     console.log(valorEmEuro);
     let elementoValorConvertido = document.getElementById("valorConvertido")
     let valorConvertido = "O valor em Euro é EUR" + valorEmEuro.toLocaleString('fr-FR', {style: 'currency', currency:'EUR'});
+    document.querySelector('#valorConvertido').style.display= "block";
     elementoValorConvertido.innerHTML = valorConvertido
 }
